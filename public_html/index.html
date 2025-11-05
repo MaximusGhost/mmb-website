@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head profile="https://www.w3.org/2005/10/profile">
+    <meta charset="utf-8">
+    <title>About Me</title>
+    <!-- Head Component -->
+    <script>
+        // Load head component synchronously to ensure CSS loads before page renders
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'components/head.html', false);
+        xhr.send();
+        if (xhr.status === 200) {
+            document.write(xhr.responseText);
+        }
+    </script>
+</head>
+
+<body id="aboutme">
+    <!-- Header Component -->
+    <div id="component-header"></div>
+    <div id="fullpage" class="scroll-container">
+        <section class="section">
+            <div class="banner">
+                <h3 class="banner-text"><a class="fadelink" href="http://gf.me/u/zaqnaz" target="_blank" rel="noopener"><div class="marquee"><span><span class="stuypht">This page is currently under construction!</span><span class="nycpht">Expect changes every now and then!</span></span></div></a></h3>
+            </div>
+            <div class="hero-image">
+                <img data-src="images/andrew-physics.jpg" alt="physics">
+            </div>
+            <div class="title homepage">
+                <h2>Welcome!</h2>
+                <p>Here I chronicle what I do.</p>
+                <div class="resumes">
+                    <a class="subsection link-mod resume" href="inc/cv-mbinder.pdf" target="_blank">
+                        <h4>Résumé</h4>
+                    </a>
+                </div>
+                <h2><a class="fadelink" href="cs.html">I like to tinker with robotics.</a></h2>
+                <div class="header-center homepage">
+                    <div class="header-column">
+                        <h4>Harvard Extension</h4>
+                        <p>7 courses at Harvard Extension School: PHYS E-1aX(L)/1bX(L), S-12, S-25, ASTR E-8</p>
+                    </div>
+                    <div class="header-column">
+                        <h4>UC Berkeley '24</h4>
+                        <p>Physics major at UC Berkeley</p>
+                    </div>
+                    <div class="header-column">
+                        <h4><a class="fadelink" href="http://stuypht.org" target="_blank" rel="noopener">Physics</a> <a class="fadelink" href="http://nycpht.org" target="_blank" rel="noopener">Teams</a></h4>
+                        <p>Co-founded the <a class="fadelink" href="http://stuypht.org" rel="noopener" target="_blank">Stuyvesant Physics Team</a> in September 2019 and the <a class="fadelink" href="http://nycpht.org" target="_blank" rel="noopener">NYC Physics Team</a> in January 2021</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="hero-image">
+                <img data-src="images/andrew-math.jpg" alt="math">
+            </div>
+            <div class="title homepage">
+                <h2><a class="fadelink" href="math.html">I do math.</a></h2>
+                <div class="header-center homepage">
+                    <div class="header-column">
+                        <h4>3 camps</h4>
+                        <p>Attended 3 different math camps over 6 years</p>
+                    </div>
+                    <div class="header-column">
+                        <h4>UC Berkeley '24</h4>
+                        <p>Applied Mathematics major with a concentration in Quantum Mechanics</p>
+                    </div>
+                    <div class="header-column">
+                        <h4>Harvard Extension</h4>
+                        <p>5 courses at Harvard Extension School: MATH E-15/16, E-23A/B, J-23C</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="hero-image">
+                <img data-src="images/andrew-piano.jpg" alt="piano">
+            </div>
+            <div class="title homepage">
+                <h2><a class="fadelink" href="music.html">I play piano</a>.</h2>
+                <div class="header-center homepage">
+                    <div class="header-column">
+                        <h4>since 2008</h4>
+                        <p>Have been studying since 2008</p>
+                    </div>
+                    <div class="header-column">
+                        <h4>4 Festivals</h4>
+                        <p>Have performed at 4 festivals over 11 years</p>
+                    </div>
+                    <div class="header-column">
+                        <h4>11 medals</h4>
+                        <p>Won 2 gold medals, 5 silver medals, 4 bronze medals at Golden Key Music Festival</p>
+                    </div>
+                </div>
+            </div>
+            <div class="resumes">
+                <a class="subsection link-mod resume" href="inc/music-cv-mbinder.pdf" target="_blank">
+                    <h4>Music Résumé</h4>
+                </a>
+            </div>
+        </section>
+        <section class="section">
+            <div class="hero-image">
+                <img data-src="images/nidan2021.jpeg" alt="karate">
+            </div>
+            <div class="title homepage">
+                <h2><a class="fadelink" href="sports.html">I am a martial artist.</a></h2>
+                <div class="header-center homepage">
+                    <div class="header-column">
+                        <h4>since 2009</h4>
+                        <p>Have been training since 2009</p>
+                    </div>
+                    <div class="header-column">
+                        <h4>Kenshikai Karate</h4>
+                        <p>Am trained in the Kenshikai Karate style</p>
+                    </div>
+                    <div class="header-column">
+                        <h4>Nidan</h4>
+                        <p>Am a 2nd-degree black belt (nidan)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="hero-image">
+                <img data-src="images/andrew-theatre.jpg" alt="theatre">
+            </div>
+            <div class="title homepage">
+                <h2><a class="fadelink" href="theatre.html">I act.</a></h2>
+            </div>
+            <div class="resumes">
+                <a class="subsection link-mod resume" href="inc/cv-theater-mbinder.pdf" target="_blank">
+                    <h4>Theatre Résumé</h4>
+                </a>
+            </div>
+        </section>
+        <section class="section">
+            <div class="hero-image">
+                <img data-src="images/andrew-fundraisingjoke.jpg" alt="fundraising">
+            </div>
+            <div class="title homepage">
+                <h2><a class="fadelink" href="fundraising.html">I take an interest in volunteer work.</a></h2>
+                <div class="header-center homepage">
+                    <div class="header-column">
+                        <h4><a class="fadelink" href="http://stuypht.org" target="_blank" rel="noopener">Stuy PhT</a> & <a class="fadelink" href="http://nycpht.org" target="_blank" rel="noopener">NYC PhT</a></h4>
+                        <p>Co-founded and raised funds for the Stuyvesant and NYC Physics Teams</p>
+                    </div>
+                    <div class="header-column">
+                        <h4>Riverdale Rising Stars</h4>
+                        <p>Helped raise funds with some friends for a long-time community theatre</p>
+                    </div>
+                    <div class="header-column">
+                        <h4><a class="fadelink" href="http://stuyzon.com" target="_blank" rel="noopener">Stuyzon</a></h4>
+                        <p>Created a website that redirects to Stuyvesant HS's Amazon affiliate link</p>
+                    </div>
+                    <div class="header-column">
+                        <h4><a class="fadelink" href="https://helpingtreefoundation.org/#health" target="_blank" rel="noopener">Mask Initiative</a></h4>
+                        <p>Launched a campaign with my parents to spread masks to everyone that needs one</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Footer Component -->
+    <div id="component-footer"></div>
+    
+    <!-- Component Loader loads header, footer, and scripts -->
+    <script src="js/component-loader.js"></script>
+</body>
+</html>

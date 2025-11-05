@@ -1,0 +1,23 @@
+{
+  "routes": [
+    {
+      "route": "/*",
+      "serve": "/index.html",
+      "statusCode": 200
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/images/*.{png,jpg,gif,svg}", "/css/*", "/js/*"]
+  },
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404.shtml",
+      "statusCode": 404
+    }
+  },
+  "globalHeaders": {
+    "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'",
+    "cache-control": "must-revalidate, max-age=86400"
+  }
+}

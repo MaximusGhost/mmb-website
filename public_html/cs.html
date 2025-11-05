@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head profile="https://www.w3.org/2005/10/profile">
+    <meta charset="utf-8">
+    <title>Computer Science</title>
+    <!-- Head Component -->
+    <script>
+        // Load head component synchronously to ensure CSS loads before page renders
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'components/head.html', false);
+        xhr.send();
+        if (xhr.status === 200) {
+            document.write(xhr.responseText);
+        }
+    </script>
+</head>
+
+<body id="cs">
+    <!-- Header Component -->
+    <div id="component-header"></div>
+    <div id="fullpage" class="scroll-container">
+        <section class="section">
+            <div class="section-container">
+                <div class="hero-image">
+                    <img data-src="images/andrew-programming.png" alt="website">
+                </div>
+                <div class="title">
+                    <h2>Computer Science</h2>
+                    <div class="header-center">
+                        <div class="header-column">
+                            <h4>Self-Coded Website</h4>
+                            <p>Along with some help from my mentors, I coded this website on my own without any templates</p>
+                        </div>
+                        <div class="header-column">
+                            <h4><a class="fadelink" href="#2">2 Games</a></h4>
+                            <p>Have been coding for many years with my grandfather and coded 2 games in JavaScript</p>
+                        </div>
+                        <div class="header-column">
+                            <h4><a class="fadelink" href="#4">Harvard Extension School</a></h4>
+                            <p>Have taken 3 computer science courses at the Harvard Extension School</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="section-container">
+                <div class="section-content">
+                    <h4 class="subtitle">Early Age</h4>
+                    <h3 class="left-mod">General Interest</h3>
+                    <p>
+                        I have been interested in computer science from a young age, as my father and grandfather are both computer programmers by profession. I started learning how to write algorithms and code in various languages with them, and have since then moved on to personal projects and a variety of courses/programs, both inside the classroom and outside of it.
+                    </p>
+                </div>
+                <div class="section-image text-mod">
+                    <img data-src="images/andrew-scratch.png" alt="scratch">
+                </div>
+            </div>
+        </section>
+          
+        <section class="section">
+            <div class="section-container-center">
+                <div class="section-image-center">
+                    <div class="intro-center">
+                        <div class="intro-column">
+                            <h4>Virusology</h4>
+                            <p>Developed an application in Swift to simulate and model how a virus spreads through a vaccinated/unvaccinated population.</p>
+                        </div>
+                        <div class="intro-column">
+                            <h4>Scratch Projects</a></h4>
+                            <p>Here is a curated selection of some projects I coded in Scratch when I was younger.</p>
+                        </div>
+                        <div class="intro-column">
+                            <h4>Robot</a></h4>
+                            <p>I am building a robot for community outreah in my neighborhood.</p>
+                        </div>
+                    </div>
+                    <img data-src="images/andrew-nycpht.png" alt="nycpht">
+                </div>
+                <div class="section-content-center">
+                    <div class="title-center">
+                        <h4 class="subtitle">Showcase</h4>
+                        <h3 class="left-mod">Selected Projects</h3>
+                    </div>
+                    <div class="description-center">
+                        <p>Here are some projects that I've done over the years in various subjects. This includes an application I coded in Swift called Virusology (meant to simulate virus spread), which evolved from an earlier project I had done in Scratch, as well as a robot I am currently building for community outreach.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-container right-mod">
+                <div class="section-content right-mod">
+                    <h4 class="subtitle right-mod">Out of School</h4>
+                    <h3 class="right-mod">CS Elsewhere</h3>
+                    <p>Outside of school, I have also taken various course as part of other programs.</p>
+                    <div class="subsection">
+                        <h4>EPGY</h4>
+                        <p>I started off with some courses at EPGY, where I learned how to write algorithms and programs in C and HTML.</p>
+                    </div>
+                    <a class="subsection link-mod" href="http://school-sharp.com" rel="noopener" target="_blank">
+                        <h4>USACO</h4>
+                        <p>I competed (and earned a gold medal) in the USA Computing Olympiad (USACO) this past year.</p>
+                    </a>
+                    <div class="subsection">
+                        <h4>EdX Coursework</h4>
+                        <p>I am currently completing Harvard's CS50 asynchronously to further expand my CS knowledge.</p>
+                    </div>
+                </div>
+                <div class="section-image text-mod">
+                    <div class="intro-right">
+                        <div class="intro-column vert-mod">
+                            <h4>CS50</h4>
+                            <p>
+                                This is an intensive intro to computer science, where I learned about writing algorithms and basic programming. You can view my final project here.
+                            </p>
+                        </div>
+                        <div class="intro-column vert-mod">
+                            <h4>USACO Gold</h4>
+                            <p>
+                                Earned Gold in USACO 2025.
+                            </p>
+                        </div>
+                    </div>
+                    <img class="mobile-mod" data-src="images/andrew-curriculumvitae-original-modified.png" alt="cv original">
+                </div>
+            </div>
+        </section>
+           
+    </div>
+    <!-- Footer Component -->
+    <div id="component-footer"></div>
+    
+    <!-- Component Loader loads header, footer, and scripts -->
+    <script src="js/component-loader.js"></script>
+</body>
+
+</html>

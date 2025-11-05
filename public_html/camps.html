@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head profile="https://www.w3.org/2005/10/profile">
+    <meta charset="utf-8">
+    <title>Camps</title>
+    <!-- Head Component -->
+    <script>
+        // Load head component synchronously to ensure CSS loads before page renders
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'components/head.html', false);
+        xhr.send();
+        if (xhr.status === 200) {
+            document.write(xhr.responseText);
+        }
+    </script>
+</head>
+
+<body id="camps">
+    <!-- Header Component -->
+    <div id="component-header"></div>
+    <div id="fullpage" class="scroll-container">
+        <section class="section">
+            <div class="section-container">
+                <div class="hero-image">
+                    <img data-src="images/andrew-epsilon1.jpg" alt="camp">
+                </div>
+                <div class="title">
+                    <h2>Camps</h2>
+                    <div class="header-center">
+                        <div class="header-column">
+                            <h4><a class="fadelink" href="#1">2 Science Camps</a></h4>
+                            <p>Have volunteered for 2 science programs</p>
+                        </div>
+                        <div class="header-column">
+                            <h4><a class="fadelink" href="#2">3 Math Camps</a></h4>
+                            <p>Have attended 3 different math camps</p>
+                        </div>
+                        <div class="header-column">
+                            <h4><a class="fadelink" href="#3">3 Miscellaneous Camps</a></h4>
+                            <p>Have attended 3 other camps, for Biology, Philanthropy, and Spanish</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="section-container">
+                <div class="section-content">
+                    <h4 class="subtitle">Science</h4>
+                    <h3 class="left-mod">Science Camps</h3>
+                    <p>
+                        I've been into science and community service from a young age, so my I jumped at the opportunity to do some scientific surveying work when my high school presented me with the opportunity.
+                    </p>
+                    <a class="subsection link-mod" href="https://www.tc.columbia.edu/hollingworth/sciencecamp/" rel="noopener" target="_blank">
+                        <h4>ECI Baja</h4>
+                        <p>My first program with Ecology Project International involved surveying marine life in Baja, Mexico during my sophomore year.</p>
+                    </a>
+                    <a class="subsection link-mod" href="https://www.monroe.edu/challengerlearningcenter" rel="noopener" target="_blank">
+                        <h4>ECI Yellowstone</h4>
+                        <p>After an incredible first experience with ECI in Baja, I eagerly signed up in the following year to survey life in Yellowstone National Park during my junior year.</p>
+                    </a>    
+                </div>
+                <div class="section-image text-mod">
+                    <div class="intro-right">
+                        <div class="intro-column vert-mod">
+                            <h4>ECI Baja '24</h4>
+                            <p>I surveyed marine life in Baja in sophomore year.</p>
+                        </div>
+                        <div class="intro-column vert-mod">
+                            <h4>ECI Yellowstone '25'</h4>
+                            <p>I surveyed forest life in Yellowstone in junior year.</p>
+                        </div>
+                    </div>
+                    <img class="mobile-mod" data-src="images/andrew-physicscamp.jpg" alt="physics">
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="section-container-center">
+                <div class="section-image-center">
+                    <div class="intro-center">
+                        <div class="intro-column">
+                            <h4><a class="fadelink" href="https://campersand.org/" rel="noopener" target="_blank">Campersand since '19</a></h4>
+                            <p>I've been attending Campersand (C&!) since 2019, continuing from Epsilon. Last year, I had the chance to give a talk as a scholar.</p>
+                        </div>
+                        <div class="intro-column">
+                            <h4><a class="fadelink" href="https://www.epsiloncamp.org/" rel="noopener" target="_blank">Epsilon '16-'18</a></h4>
+                            <p>After Delta camp, I graduated to the slightly older version and continued my camp experience at Epsilon.</p>
+                        </div>
+                        <div class="intro-column">
+                            <h4><a class="fadelink" href="https://epsiloncamp.org/" rel="noopener" target="_blank">Delta '14 & '15</a></h4>
+                            <p>I went to Delta camp in 2014 and 2015 when I was really young, where I was introduced to the world of pure mathematics.</p>
+                        </div>
+                    </div>
+                    <img data-src="images/andrew-epsilon2.jpg" alt="math">
+                </div>
+                <div class="section-content-center">
+                    <div class="title-center">
+                        <h4 class="subtitle">Mathematics</h4>
+                        <h3 class="top-mod">Math Camps</h3>
+                    </div>
+                    <div class="description-center">
+                        <p>
+                            I also attended many math camps over the years. <a class="fadelink" href="https://epsiloncamp.org/" rel="noopener" target="_blank">Delta Camp</a> introduced me to pure mathematics. <a class="fadelink" href="https://www.epsiloncamp.org/" rel="noopener" target="_blank">Epsilon Camp</a> honed my math skills and continued the fun from Delta. Finally, I came to <a class="fadelink" href="https://campersand.org/" rel="noopener" target="_blank">Campersand</a> to branch from Epsilon. More information can be seen on the Math tab on my site and on their respective websites.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="section-container right-mod">
+                <div class="section-content right-mod">
+                    <h4 class="subtitle right-mod">Miscellaneous</h4>
+                    <h3 class="right-mod">Other Camps</h3>
+                    <p>
+                        Along with the math and science camps, I've also attended a few miscellaneous camps to broaden my horizons elsewhere.
+                    </p>
+                    <a class="subsection link-mod" href="https://bigidea.co.il/en/" rel="noopener" target="_blank">
+                        <h4>Big Idea Camp</h4>
+                        <p>This was the first non-math and non-science camp that I went to, and I had some fun in Israel after my brother's bar mitzvah!</p>
+                    </a>
+                    <a class="subsection link-mod" href="https://marabou.club/about.php" rel="noopener" target="_blank">
+                        <h4>Marabou</h4>
+                        <p>Learning about various topics in mathematics at a Russian camp in Hungary was a very new, interesting, and unique experience!</p>
+                    </a>
+                    <a class="subsection link-mod" href="https://www.enforex.com/" rel="noopener" target="_blank">
+                        <h4>Enforex</h4>
+                        <p>My family and I traveled to Spain, where I spent two weeks learning tons of Spanish!</p>
+                    </a>
+                </div>
+                <div class="section-image text-mod">
+                    <div class="intro-right">
+                        <div class="intro-column vert-mod">
+                            <h4>Big Idea '16</h4>
+                            <p>I went here in 2016 after celebrating my brother's Bar Mitzvah in Haifa, and learned a lot about how to be a tech entrepeneur.</p>
+                        </div>
+                        <div class="intro-column vert-mod">
+                            <h4>Marabou '18</h4>
+                            <p>I went here in 2018 and studied quite a bit of math in Hungary, all in Russian!</p>
+                        </div>
+                        <div class="intro-column vert-mod">
+                            <h4>Enforex '19</h4>
+                            <p>I went here in 2019 and further solidified my grasp of the Spanish language, along with some great experiences in Spain!</p>
+                        </div>
+                    </div>
+                    <img data-src="images/andrew-spain.jpeg" alt="spain">
+                </div>
+            </div>
+        </section>
+        
+    </div>
+    <!-- Footer Component -->
+    <div id="component-footer"></div>
+    
+    <!-- Component Loader loads header, footer, and scripts -->
+    <script src="js/component-loader.js"></script>
+</body>
+
+</html>

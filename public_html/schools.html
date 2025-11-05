@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head profile="https://www.w3.org/2005/10/profile">
+    <meta charset="utf-8">
+    <title>Schools</title>
+    <!-- Head Component -->
+    <script>
+        // Load head component synchronously to ensure CSS loads before page renders
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'components/head.html', false);
+        xhr.send();
+        if (xhr.status === 200) {
+            document.write(xhr.responseText);
+        }
+    </script>
+</head>
+
+<body id="schools">
+    <!-- Header Component -->
+    <div id="component-header"></div>
+    <div id="fullpage" class="scroll-container">
+        <section class="section">
+            <div class="section-container">
+                <div class="hero-image">
+                    <img data-src="images/andrew-school.jpeg" alt="schools main">
+                </div>
+                <div class="title">
+                    <h2>Schools</h2>
+                    <div class="header-center">
+                        <div class="header-column">
+                            <h4>Stanford OHS '26</h4>
+                            <p>Part of Stanford Online High School's Class of 2026</p>
+                        </div>
+                        <div class="header-column">
+                            <h4><a class="fadelink" href="#2">Speyer '22</a></h4>
+                            <p>Part of Speyer Legacy School's Class of 2022, entered in 2014</p>
+                        </div>
+                        <div class="header-column">
+                            <h4><a class="fadelink" href="#3">PS24 '14</a></h4>
+                            <p>Part of PS24's Class of 2018, but left to Speyer in 2014</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-container">
+                <div class="section-content">
+                    <h4 class="subtitle">High School</h4>
+                    <h3 class="left-mod"><a class="fadelink" href="https://onlinehighschool.stanford.edu/" rel="noopener" target="_blank">Stanford OHS</a></h3>
+                    <div class="intro">
+                        <p>
+                            During my final year at Speyer (8th grade), I took one course at Stanford Online High School. I loved this course and the experience so much that I elected to become a full-time student once I graduated Speyer. I am currently in my final year at Stanford OHS, where I have met a lot of interesting people from all over the globe.
+                        </p>
+                        <div class="subsection">
+                          <h4>Regional Meetups/Homecoming</h4>
+                          <p>
+                            Despite being in an online school, I maintain in-person connections with my fellow classmates and friends by attending frequent regional meetups and yearly homecoming events.
+                          </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-image">
+                    <img data-src="images/andrew-stuy.jpeg" alt="stuyvesant">
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-container-center">
+                <div class="section-image-center">
+                    <div class="intro-center">
+                        <div class="intro-column">
+                            <h4>Speyer Debate Team</h4>
+                            <p>The debate team was a wonderful opportunity to hone my public speaking skills</p>
+                        </div>
+                        <div class="intro-column">
+                            <h4>Speyer Math Team</h4>
+                            <p>While on the math team, I participated in several contests, including the AMC 8 and MATHCOUNTS</p>
+                        </div>
+                    </div>
+                    <img data-src="images/andrew-speyer.jpg" alt="speyer">
+                </div>
+                <div class="section-content-center">
+                    <div class="title-center">
+                        <h4 class="subtitle">Middle School</h4>
+                        <h3 class="top-mod"><a class="fadelink" href="https://speyerlegacyschool.org" rel="noopener" target="_blank">Speyer Legacy School</a></h3>
+                    </div>
+                    <div class="description-center">
+                        <p>
+                            Speyer is where I built off of the foundations created during my earlier years in PS24. From first until eighth grade, I started taking more extracurricular courses and solidified my previously-held ones. My passions also grew further.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-container right-mod">
+                <div class="section-content right-mod">
+                    <h4 class="subtitle right-mod">Elementary School</h4>
+                    <h3 class="right-mod"><a class="fadelink" href="https://ps24school.org" rel="noopener" target="_blank">PS24</a></h3>
+                    <div class="intro">
+                        <p>
+                            After moving to Riverdale in 2008, I attended PS24 for one year in kindergarten. Before then, I enjoyed attending a preschool near the Riverdale Y.
+                        </p>
+                    </div>
+                </div>
+                <div class="section-image">
+                    <img data-src="images/andrew-ps24.jpeg" alt="ps24">
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Footer Component -->
+    <div id="component-footer"></div>
+    
+    <!-- Component Loader loads header, footer, and scripts -->
+    <script src="js/component-loader.js"></script>
+</body>
+
+</html>
