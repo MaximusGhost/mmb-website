@@ -8,11 +8,11 @@
   ],
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/images/*.{png,jpg,gif,svg}", "/css/*", "/js/*"]
+    "exclude": ["/img/*.{png,jpg,gif,svg}", "/css/*", "/js/*"]
   },
   "responseOverrides": {
     "404": {
-      "rewrite": "/404.shtml",
+      "rewrite": "/index.html",
       "statusCode": 404
     }
   },
