@@ -773,6 +773,7 @@ h2 a {text-decoration:underline;}
     background:#e6fdf8;
     bottom:0;
     right:0;
+    display:none;
 }
 
 .header-column:last-child:after {display:none;}
