@@ -757,6 +757,7 @@ h2 a {text-decoration:underline;}
 .header-column h4 {
     margin-bottom:10px;
     font-size:36px;
+    text-align:center;
 }
 
 .header-column p {
@@ -1254,14 +1255,14 @@ h2 a {text-decoration:underline;}
         font-size:50px;
     }
     
-    .#fp-nav ul li:hover span {
+    #fp-nav ul li:hover span {
         transform:translateX(-44%);
         will-change:transform;
         visibility:visible;
         opacity:1;
     }
     
-    .#fp-nav ul li:hover a:before {
+    #fp-nav ul li:hover a:before {
         transform: scale(1.5);
         will-change:transform;
     }
@@ -1900,6 +1901,7 @@ h2 a {text-decoration:underline;}
     display: flex;
     gap: 15px;
     align-items: center;
+    margin-right: 15px;
 }
 
 .footer-resume-link {
@@ -1930,8 +1932,9 @@ body.dark-view .footer-resume-link:hover {
 }
 
 .footer-contactme-icons {
-    width: auto;
-    flex: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .footer-icons-list {
