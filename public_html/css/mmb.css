@@ -1465,7 +1465,19 @@ h2 a {text-decoration:underline;}
     
     .menu-hover {display:none}
     
-    .footer {padding:0 10px 0 20px;}
+    .footer {
+        padding:0 10px;
+        gap: 10px;
+    }
+    
+    .footer-resumes {
+        gap: 8px;
+    }
+    
+    .footer-resume-link {
+        font-size: 9px;
+        padding: 5px 8px;
+    }
     
     .resumes {flex-direction:column}
     
@@ -1774,6 +1786,15 @@ h2 a {text-decoration:underline;}
     
     .navigation .icon {font-size: 25px;}
     
+    .footer-resumes {
+        gap: 6px;
+    }
+    
+    .footer-resume-link {
+        font-size: 8px;
+        padding: 4px 6px;
+    }
+    
     .subsection p {
         font-size:10px;
     }
@@ -1875,8 +1896,42 @@ h2 a {text-decoration:underline;}
 }
 
 /* ----------------------------------------FOOTER---------------------------------------- */
+.footer-resumes {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-resume-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    color: #e6fdf8;
+    text-decoration: none;
+    padding: 6px 12px;
+    background-color: rgba(70, 165, 141, 0.8);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.footer-resume-link:hover {
+    background-color: rgba(70, 165, 141, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-view .footer-resume-link {
+    background-color: rgba(96, 96, 96, 0.8);
+}
+
+body.dark-view .footer-resume-link:hover {
+    background-color: rgba(96, 96, 96, 1);
+}
+
 .footer-contactme-icons {
-    width:calc(100% - 45px);
+    width: auto;
+    flex: 1;
 }
 
 .footer-icons-list {
