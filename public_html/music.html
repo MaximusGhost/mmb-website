@@ -4,16 +4,13 @@
 <head profile="https://www.w3.org/2005/10/profile">
     <meta charset="utf-8">
     <title>Music</title>
-    <!-- Head Component -->
-    <script>
-        // Load head component synchronously to ensure CSS loads before page renders
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'components/head.html', false);
-        xhr.send();
-        if (xhr.status === 200) {
-            document.write(xhr.responseText);
-        }
-    </script>
+    <!-- Inline CSS to prevent flash of unstyled content -->
+    <style>
+        body { visibility: hidden; opacity: 0; }
+        body.loaded { visibility: visible; opacity: 1; transition: opacity 0.3s ease-in; }
+    </style>
+    <!-- Head component will be loaded by component-loader.js -->
+    <script src="js/component-loader.js"></script>
 </head>
 
 <body id="music">
@@ -165,9 +162,6 @@
     </div>
     <!-- Footer Component -->
     <div id="component-footer"></div>
-    
-    <!-- Component Loader loads header, footer, and scripts -->
-    <script src="js/component-loader.js"></script>
 </body>
 
 </html>
