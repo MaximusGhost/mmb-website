@@ -17,7 +17,7 @@
      */
     async function fetchComponentWithRetry(componentName, attempt = 1) {
         try {
-            const response = await fetch('components/' + componentName + '.html', {
+            const response = await fetch('/components/' + componentName + '.html', {
                 cache: 'no-cache',
                 headers: {
                     'Accept': 'text/html'
