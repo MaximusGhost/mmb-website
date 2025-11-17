@@ -17,7 +17,9 @@
      */
     async function fetchComponentWithRetry(componentName, attempt = 1) {
         try {
-            const response = await fetch('/components/' + componentName + '.html', {
+            // Use a path relative to the current page so this works
+            // both on Azure (site root) and when served from /public_html via Live Server.
+            const response = await fetch('components/' + componentName + '.html', {
                 cache: 'no-cache',
                 headers: {
                     'Accept': 'text/html'

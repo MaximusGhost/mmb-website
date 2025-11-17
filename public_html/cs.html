@@ -10,7 +10,15 @@
         body.loaded { visibility: visible; opacity: 1; transition: opacity 0.3s ease-in; }
     </style>
     <!-- Head component will be loaded by component-loader.js -->
-    <script src="/js/component-loader.js"></script>
+    <script src="js/component-loader.js"></script>
+    <!-- Fallback: ensure body becomes visible even if component-loader.js fails to load -->
+    <script>
+        window.addEventListener('load', function () {
+            if (!document.body.classList.contains('loaded')) {
+                document.body.classList.add('loaded');
+            }
+        });
+    </script>
 </head>
 
 <body id="cs">
