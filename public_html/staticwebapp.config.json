@@ -1,10 +1,17 @@
 {
   "routes": [
     {
-      "route": "/components/*.html",
+      "route": "/components/*",
       "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Cache-Control": "no-cache"
+        "Cache-Control": "no-cache, no-store, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": "0"
+      }
+    },
+    {
+      "route": "/*.html",
+      "headers": {
+        "Cache-Control": "no-cache, no-store, must-revalidate"
       }
     }
   ],
@@ -15,8 +22,7 @@
     }
   },
   "globalHeaders": {
-    "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'",
-    "cache-control": "must-revalidate, max-age=3600"
+    "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'"
   },
   "mimeTypes": {
     ".html": "text/html",
@@ -28,5 +34,8 @@
     ".jpeg": "image/jpeg",
     ".gif": "image/gif",
     ".svg": "image/svg+xml"
+  },
+  "platform": {
+    "apiRuntime": "node:18"
   }
 }
