@@ -8,7 +8,14 @@
   ],
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/img/*.{png,jpg,gif,svg}", "/css/*", "/js/*"]
+    "exclude": [
+      "/components/*",
+      "/images/*.{png,jpg,gif,svg,jpeg,JPG}",
+      "/img/*.{png,jpg,gif,svg,jpeg}",
+      "/css/*",
+      "/js/*",
+      "/inc/*"
+    ]
   },
   "responseOverrides": {
     "404": {
