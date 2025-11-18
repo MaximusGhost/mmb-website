@@ -4,7 +4,7 @@ $( document ).ready(function() {
     const pages = [
         {
             name:'aboutme',
-            sections:['welcome', 'math', 'piano', 'karate', 'theatre',  'volunteering']
+            sections:['Welcome', 'Computer Science', 'Mathematics', 'Piano', 'Martial Arts', 'Theater', 'Volunteer Work']
         },
         {
             name:'schools',
@@ -44,13 +44,14 @@ $( document ).ready(function() {
         }
     ];
     const page = pages.find(page => page.name === pageName);
-    
+    const navigationTooltips = page ? page.sections : [];
+
     $('#fullpage').fullpage({
 		licenseKey:'900926BB-41E94FFC-80595BF7-1ACB11E3',
 		touchSensitivity:true,
 		keyboardScrolling:true,
 		navigation:true,
-		navigationTooltips: page.sections,
+		navigationTooltips: navigationTooltips,
 	    showActiveTooltip: true,
 	    slidesNavigation: true,
 	});
