@@ -645,7 +645,7 @@ h2 a {text-decoration:underline;}
     justify-content:center;
     flex-direction:row;
     flex-wrap:wrap;
-    bottom:70px;
+    bottom:40px;
     left:50%;
     transform:translateX(-50%);
     will-change:transform;
@@ -1173,8 +1173,8 @@ h2 a {text-decoration:underline;}
     border-radius:16px;
     border:none;
     box-shadow: 0 1px 8px 0 rgba(66,66,66,.06), 0 2px 14px 0 rgba(66,66,66,.12);
-    margin:10px;
-    width:400px;
+    margin:8px;
+    width:320px;
     height:auto;
 }
 .video-mod img {
@@ -1871,8 +1871,8 @@ h2 a {text-decoration:underline;}
     }
     
     .video-mod {
-        width:36%;
-        height:36%;
+        width:32%;
+        height:32%;
     }
     
     .video-top {
