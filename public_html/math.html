@@ -55,7 +55,17 @@
                     </p>
                 </div>
                 <div class="section-image">
-                    <img data-src="images/andrew-epsilon1.jpg" alt="math">
+                    <img
+                        data-srcset="img/moma_small.jpg 640w,
+                                    img/moma_medium.jpg 1280w,
+                                    img/moma_large.jpg 1920w,
+                                    img/moma_extra_large.jpg 2560w"
+                        data-src="img/moma_large.jpg"
+                        sizes="(max-width: 640px) 100vw,
+                            (max-width: 1280px) 100vw,
+                            (max-width: 1920px) 100vw,
+                            2560px"
+                        alt="I am at the Museum of Math in NYC">
                 </div>
             </div>
         </section>
