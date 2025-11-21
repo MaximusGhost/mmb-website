@@ -74,9 +74,9 @@ body.dark-view .subsection {
 }
 
 body.dark-view .section-image-center:before,
-body.dark-view .section-image.text-mod:before, 
+body.dark-view .section-image.text-mod:before,
 body.dark-view .hero-image:before {
-    background:rgba(0,0,0,0.7);
+    background:rgba(0,0,0,0.5);
 }
 
 
@@ -535,7 +535,7 @@ h2 a {text-decoration:underline;}
     height:100%;
     top:0;
     left:0;
-    background:rgba(0,0,0,0.5);
+    background:rgba(0,0,0,0.25);
     transition:background 0.3s ease;
 }
 
@@ -920,7 +920,7 @@ h2 a {text-decoration:underline;}
     height:100%;
     top:0;
     left:0;
-    background:rgba(0,0,0,0.5);
+    background:rgba(0,0,0,0.25);
     transition:background 0.3s ease;
 }
 
@@ -931,7 +931,7 @@ h2 a {text-decoration:underline;}
     height:100%;
     top:0;
     left:0;
-    background:rgba(0,0,0,0.5);
+    background:rgba(0,0,0,0.25);
     transition:background 0.3s ease;
 }
 
@@ -1097,6 +1097,12 @@ h2 a {text-decoration:underline;}
     transform:translate(-50%,-80%);
     will-change:transform;
     z-index:2;
+}
+
+/* Specific positioning for the diploma thumbnail on music page */
+.single-image.diploma-image {
+    max-width:150px;                 /* half the base max width */
+    top:calc(50% + 180px);           /* pushed much lower */
 }
 
 .gallery-item:focus {
@@ -1845,6 +1851,13 @@ h2 a {text-decoration:underline;}
         transform:translate(-50%, -50%);
         will-change:transform;
         left:50%;
+    }
+
+    /* Smaller and lower diploma image on small screens */
+    .single-image.diploma-image {
+        width:20%;
+        height:20%;
+        top:70%;
     }
     
     .single-image img {
