@@ -1127,6 +1127,20 @@ h2 a {text-decoration:underline;}
     align-items: center;
     padding-right:10px;
 }
+/* Uniform gallery thumbnails on theatre page */
+#theatre .gallery-item {
+    flex: 0 0 auto; /* allow width to be determined by image */
+}
+
+#theatre .gallery-item img {
+    height: 150px;  /* fixed height */
+    width: auto;    /* variable width to preserve aspect ratio */
+}
+
+/* Lower the theatre gallery vertically on the page */
+#theatre .gallery {
+    top: 65%;
+}
 
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
@@ -1898,6 +1912,11 @@ h2 a {text-decoration:underline;}
         left:50%;
         transform:translate(-50%, -70%);
         will-change:transform;
+    }
+
+    /* Theatre-specific mobile tweak: show gallery a bit lower */
+    #theatre .gallery {
+        top:83%;
     }
     
     .gallery.high-mod {
