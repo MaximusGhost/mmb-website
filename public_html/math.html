@@ -28,7 +28,17 @@
         <section class="section">
             <div class="section-container">
                 <div class="hero-image">
-                    <img data-src="images/andrew-math.jpg" alt="math">
+                    <img
+                        data-srcset="img/math_var_small.jpg 640w,
+                                    img/math_var_medium.jpg 1280w,
+                                    img/math_var_large.jpg 1920w,
+                                    img/math_var_extra_large.jpg 2560w"
+                        data-src="img/math_var_large.jpg"
+                        sizes="(max-width: 640px) 100vw,
+                            (max-width: 1280px) 100vw,
+                            (max-width: 1920px) 100vw,
+                            2560px"
+                        alt="I am studying VaR">
                 </div>
                 <div class="title">
                     <h2>Mathematics</h2>

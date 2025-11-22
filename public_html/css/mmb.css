@@ -703,14 +703,10 @@ h2 a {text-decoration:underline;}
     right:0;
 }
 
+/* No separator line for vertical intro columns */
 .intro-column.vert-mod:after {
-    content:'';
-    position:absolute;
-    width:60%;
-    height:1px;
-    background:#e6fdf8;
-    left:15px;
-    bottom:0;
+    content:none;
+    display:none;
 }
 
 .intro-column:last-child:after {display:none;}
@@ -1649,22 +1645,10 @@ h2 a {text-decoration:underline;}
         z-index:0;
     }
     
+    /* No separator line for vertical intro columns on tablet */
     .intro-column.vert-mod:after {
-        content:'';
-        position:absolute;
-        width:1px;
-        height:70px;
-        background:#e6fdf8;
-        left:0;
-        top:10px;
-    }
-    
-    .intro-column.vert-mod:first-child:after {
+        content:none;
         display:none;
-    }
-    
-    .intro-column.vert-mod:last-child:after {
-        display:block;
     }
 }
 
@@ -1679,7 +1663,7 @@ h2 a {text-decoration:underline;}
     }
     
     .header-column:after,
-    .intro-column:after {
+    .intro-column:not(.vert-mod):after {
         content:'';
         width:60%;
         height:2px;

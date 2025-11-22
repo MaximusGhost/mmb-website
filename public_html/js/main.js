@@ -12,11 +12,7 @@ $( document ).ready(function() {
         },
         {
             name:'math',
-            sections:['mathematics','early age','camps','competitions','courses and programs', 'berkeley']
-        },
-        {
-            name:'science',
-            sections:['physics','early age','camps','high school','extracurricular', 'berkeley']
+            sections:['mathematics','early age','camps','courses and programs']
         },
         {
             name:'music',
@@ -39,8 +35,8 @@ $( document ).ready(function() {
             sections:['karate','starting out','getting to black belt','demonstrations']
         },
         {
-            name:'fundraising',
-            sections:['fundraising','why fundraising?','stuy physics team','nyc physics team','riverdale rising stars','stuyzon/rrszon','mask initiative']
+            name:'volunteering',
+            sections:['volunteering','why volunteering?','community robot','summer camp','SAT math prep','community piano performances']
         }
     ];
     const page = pages.find(page => page.name === pageName);
