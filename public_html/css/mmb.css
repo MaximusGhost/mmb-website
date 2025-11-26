@@ -626,6 +626,12 @@ h2 a {text-decoration:underline;}
     flex-wrap:wrap;
 }
 
+/* Sports page: move intro text much higher so it appears above the gallery */
+#sports .intro-center {
+    bottom:auto;
+    top:15%;
+}
+
 .intro-games {
     position:absolute;
     display:flex;
@@ -1123,18 +1129,21 @@ h2 a {text-decoration:underline;}
     align-items: center;
     padding-right:10px;
 }
-/* Uniform gallery thumbnails on theatre page */
-#theatre .gallery-item {
+/* Uniform gallery thumbnails on theatre and sports pages */
+#theatre .gallery-item,
+#sports .gallery-item {
     flex: 0 0 auto; /* allow width to be determined by image */
 }
 
-#theatre .gallery-item img {
+#theatre .gallery-item img,
+#sports .gallery-item img {
     height: 150px;  /* fixed height */
     width: auto;    /* variable width to preserve aspect ratio */
 }
 
-/* Lower the theatre gallery vertically on the page */
-#theatre .gallery {
+/* Lower the theatre and sports galleries vertically on the page */
+#theatre .gallery,
+#sports .gallery {
     top: 65%;
 }
 
