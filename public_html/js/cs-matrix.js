@@ -20,8 +20,15 @@
       'Stanford OHS is not a school. It’s a portal.',
       'The robot roams the neighborhood. The future roams with it.',
       'Every piano key is a choice. Every choice alters the system.',
-      'CS and Math are two halves of the same equation.'
-    ];
+      'CS and Math are two halves of the same equation.',
+      'CS50 opens the door. Curiosity walks through it.',
+      'Robots don’t wander. They search.',
+      'Stanford OHS: the classroom without walls.',
+      'Admissions look for potential. Potential looks back.',
+      'Math is the signal. Noise is optional.',
+      'The piano doesn’t play music. You do.',
+      'Probability isn’t fate. It’s a suggestion.'
+   ];
 
     var config = {
       fontFamily: "'Inconsolata', monospace",
@@ -54,7 +61,9 @@
 
     var messageState = {
       nextMessageTime: performance.now() + randomBetween(config.messageIntervalMin, config.messageIntervalMax),
-      activeMessages: []
+      activeMessages: [],
+      currentIndex: 0,          // which message to show next (sequential)
+      pendingNextDelay: true    // start in "pause" state so first message appears after a gap
     };
 
     function randomBetween(min, max) {
@@ -107,7 +116,9 @@
     }
 
     function createMessage(now) {
-      var text = pickRandomMessage();
+      // Show messages in sequence instead of randomly
+      var text = messages[messageState.currentIndex];
+      messageState.currentIndex = (messageState.currentIndex + 1) % messages.length;
 
       // Center the full sentence horizontally in the middle of the screen
       var metrics = ctx.measureText(text);
@@ -121,13 +132,13 @@
         y: y,
         startTime: now
       });
-
-      messageState.nextMessageTime = now + randomBetween(config.messageIntervalMin, config.messageIntervalMax);
+      // Note: nextMessageTime is now set when the previous message fully disappears
     }
 
     function drawMessages(now) {
       var duration = config.messageDuration;
       var remainingMessages = [];
+      var hadAny = messageState.activeMessages.length > 0;
 
       for (var i = 0; i < messageState.activeMessages.length; i++) {
         var msg = messageState.activeMessages[i];
@@ -136,13 +147,21 @@
         if (elapsed < duration) {
           // Horizontal sentences: draw in bright white, larger and bold for emphasis
           ctx.fillStyle = '#ffffff';
-          var messageFontSize = fontSize * 1.2; 
+          var messageFontSize = fontSize * 1.2;
           ctx.font = messageFontSize + 'px ' + config.fontFamily;
 
           // Draw the whole sentence horizontally at the precomputed center position
           ctx.fillText(msg.text, msg.x, msg.y);
           remainingMessages.push(msg);
         }
+      }
+
+      // If a message just finished (was present, now none), schedule the next one
+      // after a random pause. This creates the visible → empty → next visible cycle.
+      if (hadAny && remainingMessages.length === 0) {
+        messageState.nextMessageTime =
+          now + randomBetween(config.messageIntervalMin, config.messageIntervalMax);
+        messageState.pendingNextDelay = true;
       }
 
       messageState.activeMessages = remainingMessages;
@@ -234,8 +253,13 @@
         }
       }
 
-      if (now >= messageState.nextMessageTime && messageState.activeMessages.length < 3) {
+      // Only create a new message when none are active, in sequence, after a random pause
+      if (now >= messageState.nextMessageTime &&
+          messageState.activeMessages.length === 0 &&
+          messageState.pendingNextDelay) {
         createMessage(now);
+        // We've just started the next message; clear the pending‑pause flag
+        messageState.pendingNextDelay = false;
       }
 
       drawMessages(now);
