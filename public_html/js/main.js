@@ -24,7 +24,8 @@ $( document ).ready(function() {
         },
         {
             name:'cs',
-            sections:['cs','general interest','game gallery','cs at school','outside school','additional projects', 'latex']
+            sections:['computer science','general interest','virusology','this website','usaco gold','cs50 ai sequence','community robot'],
+            anchors:['cs-hero','cs-general-interest','cs-virusology','cs-website','cs-usaco','cs-cs50-ai','cs-community-robot']
         },
         {
             name:'camps',
@@ -36,21 +37,63 @@ $( document ).ready(function() {
         },
         {
             name:'volunteering',
-            sections:['volunteering','why volunteering?','community robot','summer camp','SAT math prep','community piano performances']
+            sections:['volunteering','why volunteering?','community robot','summer camp','SAT math prep','community piano performances'],
+            anchors:['volunteer-hero','volunteer-why','volunteer-community-robot','volunteer-summer-camp','volunteer-sat-math-prep','volunteer-community-piano']
         }
     ];
     const page = pages.find(page => page.name === pageName);
     const navigationTooltips = page ? page.sections : [];
+    const anchors = page && page.anchors ? page.anchors : [];
+
+    function getActivePageLabel() {
+        const $activeNavItem = $('#nav li#active .menu-hover').first();
+        if ($activeNavItem.length) {
+            return $activeNavItem.text().trim();
+        }
+        const docTitle = $('head > title').text().trim();
+        return docTitle || '';
+    }
+
+    function updateHeaderTitle() {
+        const $headerTitle = $('.header h1');
+        if (!$headerTitle.length) {
+            return;
+        }
+
+        const $sections = $('#fullpage .section');
+        if (!$sections.length) {
+            return;
+        }
+
+        const isFirstSectionActive = $sections.first().hasClass('active');
+        if (isFirstSectionActive) {
+            $headerTitle.text("Max's Curriculum Vitae");
+        } else {
+            const pageLabel = getActivePageLabel();
+            if (pageLabel) {
+                $headerTitle.text('CV - ' + pageLabel);
+            } else {
+                $headerTitle.text("Max's Curriculum Vitae");
+            }
+        }
+    }
 
     $('#fullpage').fullpage({
-		licenseKey:'900926BB-41E94FFC-80595BF7-1ACB11E3',
-		touchSensitivity:true,
-		keyboardScrolling:true,
-		navigation:true,
-		navigationTooltips: navigationTooltips,
-	    showActiveTooltip: true,
-	    slidesNavigation: true,
-	});
+        licenseKey:'900926BB-41E94FFC-80595BF7-1ACB11E3',
+        touchSensitivity:true,
+        keyboardScrolling:true,
+        navigation:true,
+        navigationTooltips: navigationTooltips,
+        anchors: anchors,
+        showActiveTooltip: true,
+        slidesNavigation: true,
+        afterLoad: function(origin, destination, direction) {
+            updateHeaderTitle();
+        }
+    });
+
+    // Ensure header title is correct on initial load
+    updateHeaderTitle();
     
     /*NAVIGATION*/
     let mybodyid = $('body').attr('id');

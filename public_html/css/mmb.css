@@ -348,6 +348,28 @@ h2 a {text-decoration:underline;}
     width:100%;
     height:auto;
 }
+
+/* Highlight recently updated nav items (Computer Science & Volunteering) */
+/* Subtle highlight: gently pulse icon brightness/color instead of a ring */
+.nav-list li.nav-highlight img {
+    animation: nav-highlight-pulse 2s ease-in-out infinite;
+    will-change: transform, filter;
+}
+
+@keyframes nav-highlight-pulse {
+    0% {
+        transform: scale(1);
+        filter: none;
+    }
+    50% {
+        transform: scale(1.05);
+        filter: brightness(1.25) saturate(1.35);
+    }
+    100% {
+        transform: scale(1);
+        filter: none;
+    }
+}
 .navigation .icon {
     display:none;
     font-size:32px;

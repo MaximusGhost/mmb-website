@@ -55,85 +55,168 @@
                 <div class="section-content">
                     <h4 class="subtitle">Early Age</h4>
                     <h3 class="left-mod">General Interest</h3>
-                    <p>
-                        I have been interested in computer science from a young age, as my father and grandfather are both computer programmers by profession. I started learning how to write algorithms and code in various languages with them, and have since then moved on to personal projects and a variety of courses/programs, both inside the classroom and outside of it.
-                    </p>
+                    <p>My interest in computer science started early, and one of my first real projects was a virus-spread simulation built entirely in Scratch. During the summer of 2020, I attended Campersand, which moved online because of COVID-19. One of my courses introduced compartment models in epidemiology and the basics of agent-based simulations. I was fascinated by the idea that simple rules could model something as complex as an epidemic, so I decided to build my own version.</p>
+                    <br>
+                    <p>In my simulation, smiley faces wander randomly across the screen. Yellow represents healthy people and green represents infected ones. When an infected smiley touches a healthy one, there is a chance of transmission. If they are wearing masks that cover most of their features, the probability decreases because there is less exposed area. Without using any advanced math, I could visually demonstrate how transmission works and why certain precautions help.</p>
+                    <br>
+                    <p>It was my first experience discovering that code can bring scientific ideas to life. It was also simply a fun project to create and experiment with.</p>
                 </div>
                 <div class="section-image text-mod">
-                    <img data-src="images/andrew-scratch.png" alt="scratch">
+                    <img
+                        data-srcset="img/camp_epsilon_2020_small.jpg 640w,
+                                    img/camp_epsilon_2020_medium.jpg 1280w,
+                                    img/camp_epsilon_2020_large.jpg 1920w,
+                                    img/camp_epsilon_2020_extra_large.jpg 2560w"
+                        data-src="img/camp_epsilon_2020_large.jpg"
+                        sizes="(max-width: 640px) 100vw,
+                            (max-width: 1280px) 100vw,
+                            (max-width: 1920px) 100vw,
+                            2560px"
+                        alt="Scratch simulation of virus spread">
                 </div>
             </div>
         </section>
-          
-        <section class="section">
-            <div class="section-container-center">
-                <div class="section-image-center">
-                    <div class="intro-center">
-                        <div class="intro-column">
-                            <h4>Virusology</h4>
-                            <p>Developed an application in Swift to simulate and model how a virus spreads through a vaccinated/unvaccinated population.</p>
-                        </div>
-                        <div class="intro-column">
-                            <h4>Scratch Projects</a></h4>
-                            <p>Here is a curated selection of some projects I coded in Scratch when I was younger.</p>
-                        </div>
-                        <div class="intro-column">
-                            <h4>Robot</a></h4>
-                            <p>I am building a robot for community outreach in my neighborhood.</p>
-                        </div>
-                    </div>
-                    <img data-src="images/andrew-nycpht.png" alt="nycpht">
-                </div>
-                <div class="section-content-center">
-                    <div class="title-center">
-                        <h4 class="subtitle">Showcase</h4>
-                        <h3 class="left-mod">Selected Projects</h3>
-                    </div>
-                    <div class="description-center">
-                        <p>Here are some projects that I've done over the years in various subjects. This includes an application I coded in Swift called Virusology (meant to simulate virus spread), which evolved from an earlier project I had done in Scratch, as well as a robot I am currently building for community outreach.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <section class="section">
             <div class="section-container right-mod">
                 <div class="section-content right-mod">
-                    <h4 class="subtitle right-mod">Out of School</h4>
-                    <h3 class="right-mod">CS Elsewhere</h3>
-                    <p>Outside of school, I have also taken various course as part of other programs.</p>
-                    <div class="subsection">
-                        <h4>EPGY</h4>
-                        <p>I started off with some courses at EPGY, where I learned how to write algorithms and programs in C and HTML.</p>
-                    </div>
-                    <a class="subsection link-mod" href="http://school-sharp.com" rel="noopener" target="_blank">
-                        <h4>USACO</h4>
-                        <p>I competed (and earned a gold medal) in the USA Computing Olympiad (USACO) this past year.</p>
-                    </a>
-                    <div class="subsection">
-                        <h4>EdX Coursework</h4>
-                        <p>I am currently completing Harvard's CS50 asynchronously to further expand my CS knowledge.</p>
-                    </div>
+                    <h4 class="subtitle right-mod">My first iPhone app</h4>
+                    <h3 class="right-mod">Virusology</h3>
+                    <p>A few years after my Scratch simulation, I wanted to build something more advanced, so I began working on an iPhone application called Virusology. It models the spread of a virus using an agent-based SIR framework. To create it, I taught myself Swift and learned how to structure a full mobile application.</p>
+                    <br>
+                    <p>The real challenge was translating biological processes into code. I needed to determine the probability that one agent becomes infected when it comes into contact with another. Real viruses behave in complicated ways, so I had to find a practical method to convert real-world attributes into a simple infection model. To solve this, I developed an approach that estimates infection probability using actual epidemiological data. I explored linear regression and experimented with machine learning techniques to tune the simulation until it behaved realistically.</p>
+                    <br>
+                    <p>Virusology became both a programming project and a scientific investigation. It showed me how theory, data, and code can work together, and it pushed me to think more deeply about how complex systems can be represented through algorithms.</p>
+                    <br>
+                    <p>I wrote my Stanford OHS final project for my Statistics class, <a class="fadelink" href="inc/apstat-project-mbinder.pdf">Predicting the Probability of Infection for an Agent-Based Model From Virus Attributes</a>, based on this work.</p>
                 </div>
                 <div class="section-image text-mod">
-                    <div class="intro-right">
-                        <div class="intro-column vert-mod">
-                            <h4>CS50</h4>
-                            <p>
-                                This is an intensive intro to computer science, where I learned about writing algorithms and basic programming. You can view my final project here.
-                            </p>
-                        </div>
-                        <div class="intro-column vert-mod">
-                            <h4>USACO Gold</h4>
-                            <p>
-                                Earned Gold in USACO 2025.
-                            </p>
-                        </div>
-                    </div>
-                    <img class="mobile-mod" data-src="images/andrew-curriculumvitae-original-modified.png" alt="cv original">
+                    <img
+                        data-srcset="img/cs_virusology_small.jpg 640w,
+                                    img/cs_virusology_medium.jpg 1280w,
+                                    img/cs_virusology_large.jpg 1920w,
+                                    img/cs_virusology_extra_large.jpg 2560w"
+                        data-src="img/cs_virusology_large.jpg"
+                        sizes="(max-width: 640px) 100vw,
+                            (max-width: 1280px) 100vw,
+                            (max-width: 1920px) 100vw,
+                            2560px"
+                        alt="Scratch simulation of virus spread">
                 </div>
             </div>
         </section>
-           
+
+        <section class="section">
+            <div class="section-container">
+                <div class="section-content">
+                    <h4 class="subtitle">Touching the Internet</h4>
+                    <h3 class="left-mod">This Website</h3>
+                    <p>When I decided to create a personal website, I wanted it to be fully my own. Instead of using a template, this site is built entirely using HTML, CSS, and JavaScript. Along the way, I had to figure out how to register and manage a domain name, configure DNS records, and deploy the website using modern hosting tools.</p>
+                    <br>
+                    <p>I experimented with different layouts, custom styling, and interactive elements. I focused on making the design responsive so it would look clean on phones, tablets, and larger screens. I also spent time improving the overall user experience so the site would be simple to navigate while still reflecting my personality.</p>
+                    <br>
+                    <p>Building the website myself helped me understand how the web operates behind the scenes. It gave me full control over every detail and allowed me to turn ideas into working code. It also became a place to share my projects, which made the work both meaningful and enjoyable.</p>
+                </div>
+                <div class="section-image text-mod">
+                    <img
+                        data-srcset="img/cs_vs_small.jpg 640w,
+                                    img/cs_vs_medium.jpg 1280w,
+                                    img/cs_vs_large.jpg 1920w,
+                                    img/cs_vs_extra_large.jpg 2560w"
+                        data-src="img/cs_vs_large.jpg"
+                        sizes="(max-width: 640px) 100vw,
+                            (max-width: 1280px) 100vw,
+                            (max-width: 1920px) 100vw,
+                            2560px"
+                        alt="VS Code screenshot">
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-container right-mod">
+                <div class="section-content right-mod">
+                    <h4 class="subtitle right-mod">Competitions</h4>
+                    <h3 class="right-mod">USACO Gold</h3>
+                    <p>Even though the USACO problems revolve around cows, barns, and every possible farm-related scenario, I have somehow grown to enjoy competitive programming. At this point I feel like I know more about hypothetical cow logistics than any normal person should, yet the problems are so cleverly designed that I keep coming back for more. I started solving them in Python and later switched to C++ once the cows demanded faster algorithms. Through USACO I learned data structures, dynamic programming, greedy strategies, graph theory, and many ways to turn strange farm stories into elegant code.</p>
+                    <br>
+                    <p>What I like most is the feeling of discovery that comes with solving a difficult problem. Often the story sounds simple, but the underlying logic requires careful reasoning. I enjoy the challenge of taking a problem that looks impossible at first, trying different ideas, and eventually finding the approach that works. It has strengthened my ability to think systematically and to translate abstract reasoning into working code.</p>
+                    <br>
+                    <p>After consistent practice, I advanced to the Gold division. The problems became more demanding, but they also helped me grow as a programmer. USACO has taught me how to analyze complexity, optimize performance, and approach problems in a clear and structured way.</p>
+                </div>
+                <div class="section-image text-mod">
+                    <img
+                        data-srcset="img/cs_usaco_small.jpg 640w,
+                                    img/cs_usaco_medium.jpg 1280w,
+                                    img/cs_usaco_large.jpg 1920w,
+                                    img/cs_usaco_extra_large.jpg 2560w"
+                        data-src="img/cs_usaco_large.jpg"
+                        sizes="(max-width: 640px) 100vw,
+                            (max-width: 1280px) 100vw,
+                            (max-width: 1920px) 100vw,
+                            2560px"
+                        alt="USACO Cow programming">
+                </div>
+            </div>
+        </section>
+      
+        <section class="section">
+            <div class="section-container">
+                <div class="section-content">
+                    <h4 class="subtitle">Artificial intelligence</h4>
+                    <h3 class="left-mod">CS50 AI Sequence</h3>
+                    <p>My interest in artificial intelligence goes far beyond writing prompts for large language models. I want to understand the algorithms, math, and theories that allow AI to work. At school, I study Data Science, which gives me a foundation in statistics, modeling, and analytical methods. I am also completing Harvard’s CS50 program in AI through edX.</p>
+                    <br>
+                    <p>Through this course, I am learning graph search, classification methods, optimization techniques, reinforcement learning, and other foundational ideas. The projects in the course help me connect these concepts to real code in Python.</p>
+                    <br>
+                    <p>Studying AI at this level has shown me that it is not magic. It is a combination of mathematics, logic, and engineering that works together to create intelligent behavior. Learning the theory behind it gives me the tools to build intelligent systems of my own, and it motivates me to pursue even more advanced work in this field.</p>
+                </div>
+                <div class="section-image text-mod">
+                    <img
+                        data-srcset="img/cs_cs50_small.jpg 640w,
+                                    img/cs_cs50_medium.jpg 1280w,
+                                    img/cs_cs50_large.jpg 1920w,
+                                    img/cs_cs50_extra_large.jpg 2560w"
+                        data-src="img/cs_cs50_large.jpg"
+                        sizes="(max-width: 640px) 100vw,
+                            (max-width: 1280px) 100vw,
+                            (max-width: 1920px) 100vw,
+                            2560px"
+                        alt="I and my Duck">
+                </div>
+            </div>
+        </section> 
+
+        <section class="section">
+            <div class="section-container right-mod">
+                <div class="section-content right-mod">
+                    <h4 class="subtitle right-mod">Community Outreach</h4>
+                    <h3 class="right-mod" id="cs-community-robot">Community Robot</h3>
+                    <p>One of my most challenging computer science projects is the Community Robot, which I am building with two friends. The robot moves around the neighborhood and shares information about local events, but behind the scenes it is a full engineering system. Its main computer is an NVIDIA Jetson Orin Nano, which we chose instead of a Raspberry Pi because it can run strong on-device AI for navigation and also support real-time conversations with people using a local language model similar to ChatGPT.</p>
+                    <br>
+                    <p>The robot runs Linux and uses ROS2 to coordinate cameras, LiDAR, sensors, and motor controllers. We are writing most of the control logic in Python, including the software that drives the repurposed hoverboard wheels and communicates with the ODrive controllers. We are also developing the mapping, localization, and autonomous navigation pipeline that will allow the robot to move safely and independently.</p>
+                    <br>
+                    <p>Building this robot is teaching us real robotics engineering, embedded systems, and applied AI, and watching it slowly come to life has become one of the most exciting parts of our computer science work.</p>
+                    <br>
+                    <p>More about this project <a class="fadelink" href="volunteer.html#volunteer-community-robot">here</a>.</p>
+                </div>
+                <div class="section-image text-mod">
+                    <img
+                        data-srcset="img/robot_construction_small.jpg 640w,
+                                    img/robot_construction_medium.jpg 1280w,
+                                    img/robot_construction_large.jpg 1920w,
+                                    img/robot_construction_extra_large.jpg 2560w"
+                        data-src="img/robot_construction_large.jpg"
+                        sizes="(max-width: 640px) 100vw,
+                            (max-width: 1280px) 100vw,
+                            (max-width: 1920px) 100vw,
+                            2560px"
+                        alt="I am working on the robot.">
+                </div>
+            </div>
+        </section> 
+        
+
     </div>
     <!-- Footer Component -->
     <div id="component-footer"></div>
