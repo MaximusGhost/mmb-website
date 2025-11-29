@@ -544,10 +544,31 @@ h2 a {text-decoration:underline;}
     left:0;
 }
 
+/* Matrix hero: ensure a dark base background on CS page */
+#cs .hero-image {
+    background-color:#000;
+}
+
+/* Default hero image */
 .hero-image img {
     height:100%;
     width:100%;
     object-fit:cover
+}
+
+/* Hide fallback hero image on CS page (Matrix canvas takes over visually) */
+#cs .hero-image img {
+    display:none;
+}
+
+/* Matrix canvas sizing */
+.cs-matrix-canvas {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:block;
 }
 
 .hero-image:before {
