@@ -71,7 +71,17 @@
                     </p>
                 </div>
                 <div class="section-image">
-                    <img data-src="images/fundraising-placeholder.png" alt="fundraising">
+                    <img
+                    data-srcset="img/volunteer_frozen_small.jpg 640w,
+                                 img/volunteer_frozen_medium.jpg 1280w,
+                                 img/volunteer_frozen_large.jpg 1920w,
+                                 img/volunteer_frozen_extra_large.jpg 2560w"
+                    data-src="img/volunteer_frozen_large.jpg"
+                    sizes="(max-width: 640px) 100vw,
+                           (max-width: 1280px) 100vw,
+                           (max-width: 1920px) 100vw,
+                           2560px"
+                    alt="I am distributing fliers for the Riverdale Y Frozen show">
                 </div>
             </div>
         </section>

@@ -862,6 +862,28 @@ h2 a {text-decoration:underline;}
     top:90%;
 }
 
+/* CS hero quick links under intro paragraphs */
+#cs .hero-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    transform: translateX(-50%);
+    will-change: transform;
+}
+
+#cs .hero-links h4 {
+    font-size: 24px;
+    color: #e6fdf8;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 1;
+}
+
 .title.homepage {
     max-width:900px;
 }
@@ -1437,6 +1459,16 @@ h2 a {text-decoration:underline;}
         opacity:1;
         transform:translateX(0);
         will-change:transform;
+    }
+
+    /* CS hero: widen "My inspiration" and "Be my guest" columns on large screens */
+    #cs .header-center-wide .header-column {
+        width: 700px;
+        max-width: 700px;
+    }
+
+    #cs .header-center-wide {
+        max-width: 1500px;
     }
 }
 
